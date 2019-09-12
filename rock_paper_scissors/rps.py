@@ -26,15 +26,13 @@ def rock_paper_scissors(n):
         # in the order of [rock paper scissor].
         # Example n = 2. (n = 1) = [["rock"], ["paper"], ["scissors"]]
         # m is appended to (n = 1)
-        # m is bracketed for list addition. 
+        # m is bracketed for list addition.
         cache[n] = [r + [m] for r in recurse(n - 1) for m in moves]
 
         return cache[n]
 
     return recurse(n)
 
-
-print(rock_paper_scissors(5))
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
