@@ -7,7 +7,7 @@ import sys
 # a solution that is more efficient than the naive 
 # recursive solution
 def eating_cookies(n, cache=None):
-    #Takes into account the negative values. 
+    #Takes into account the negative values.
     if n < 0:
         return 0
     #1 or greater will always return a value
